@@ -20,7 +20,7 @@ def magic_eightball():
         if question.endswith("?"):
             print(random.choice(response))
             ans = input("Would you like to ask another question? y/n")
-            if ans == "n":
+            if ans == "n" or "no" or "No" or "N" :
                 break
         else: 
             print("Try again! Question must end in a question mark.")
